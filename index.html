@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RPC Server and ABI</title>
+</head>
+<body>
+  <h1>RPC Server and ABI</h1>
+  <p>
+    RPC Server: <input type="text" id="rpcServer" value="<default>">
+    <button onclick="updateRPCServer()">Submit</button>
+  </p>
+  <p>
+    ABI JSON: <textarea id="abi" rows="10" cols="50" style="width: 100%">
+      <default>
+    </textarea>
+    <button onclick="updateABI()">Submit</button>
+  </p>
+  <script>
+    function updateRPCServer() {
+      const rpcServer = document.getElementById("rpcServer").value;
+      document.getElementById("rpcServer").value = rpcServer;
+    }
+
+    function updateABI() {
+      const abi = document.getElementById("abi").value;
+      document.getElementById("abi").value = abi;
+    }
+  </script>
+</body>
+</html>
